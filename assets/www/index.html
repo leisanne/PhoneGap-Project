@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Device Properties Example</title>
+<link rel="stylesheet"
+	href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script
+	src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>
+
+<link rel="stylesheet" type="text/css"  href="main.css"  />
+<script src="script.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" charset="utf-8" src="jquery-1.8.2.js"></script>
+</head>
+<body>
+	<div data-role="page" id="home">
+		<div data-role="header">
+			<h1>Digi-Journal v0.1</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-theme="b"
+						class="ui-btn-active">Home</a></li>
+					
+				</ul>
+			</div>
+		</div>
+
+		<div data-role="content">
+			<div class="ui-grid-a">
+			
+			<div class="ui-block-a" style="height: 115px;"><a href="#cap" data-transition="pop"> <img src="cap.png"
+				alt="capture">
+			</a></div>
+			
+			
+			<div class="ui-block-b" style="height: 115px;"><a href="#journal" data-transition="pop"> <img src="journal.png"
+				alt="capture">
+			</a></div>
+			
+			
+			
+			<div class="ui-block-a" style="height: 115px;"><a href="#geo" data-transition="pop"> <img src="map.png"
+				alt="capture">
+			</a></div>
+			
+			
+			<div class="ui-block-b" style="height: 115px;"><a href="#media" data-transition="pop"> <img src="media.png"
+				alt="capture">
+			</a></div>
+			
+			
+			<div class="ui-block-a" style="height: 115px;"><a href="#record" data-transition="pop"> <img src="record.png"
+				alt="capture">
+			</a></div>
+			
+			
+			</div> 
+		</div>
+
+		<div data-role="footer">
+			<h4>&copy; 2012</h4>
+		</div>
+	</div>
+
+	<div data-role="page" id="journal">
+		<div data-role="header">
+			<h1>Digi-Journal v0.1</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-theme="b">Home</a></li>
+					
+				</ul>
+			</div>
+		</div>
+
+		<div data-role="content">
+			<p>Open Database</p>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc
+				mollis, nulla non elementum tincidunt, felis ligula sodales lectus,
+				sit amet dignissim quam massa sit amet lorem. Aenean lorem risus,
+				tempus nec, gravida eu, semper sed, ipsum. Donec risus. Pellentesque
+				sollicitudin sapien ut neque scelerisque blandit. Praesent metus.
+				Mauris pulvinar mattis justo. Lorem ipsum dolor sit amet,
+				consectetuer adipiscing elit. Integer dictum vehicula orci. Integer
+				sed velit. Nunc in sem sit amet ligula scelerisque dapibus. Nullam
+				commodo odio vel enim.</p>
+			<p>
+				<a href="#" data-role="button" data-rel="back" data-theme="b">Back
+					to previous page</a>
+			</p>
+		</div>
+
+		<div data-role="footer">
+			<h4>&copy; 2011</h4>
+		</div>
+	</div>
+
+	<div data-role="page" id="geo">
+		<div data-role="header">
+			<h1>Digi-Journal v0.1</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-theme="b">Home</a></li>
+					
+				</ul>
+			</div>
+		</div>
+
+		<div data-role="content" >
+	 	
+	 	 	<div id="map_canvas" style="width:300px; height:400px"></div>
+			 
+			<p>
+				<a href="#" data-role="button" data-rel="back" data-theme="b">Back
+					to previous page</a>
+			</p>
+		</div>
+
+		<div data-role="footer">
+			<h4>&copy; 2012</h4>
+		</div>
+	</div>
+
+	<div data-role="page" id="media">
+		<div data-role="header">
+			<h1>Digi-Journal v0.1</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-theme="b">Home</a></li>
+					
+				</ul>
+			</div>
+		</div>
+		<div data-role="content">
+			
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc
+				mollis, nulla non elementum tincidunt, felis ligula sodales lectus,
+				sit amet dignissim quam massa sit amet lorem. Aenean lorem risus,
+				tempus nec, gravida eu, semper sed, ipsum. Donec risus. Pellentesque
+				sollicitudin sapien ut neque scelerisque blandit. Praesent metus.
+				Mauris pulvinar mattis justo. Lorem ipsum dolor sit amet,
+				consectetuer adipiscing elit. Integer dictum vehicula orci. Integer
+				sed velit. Nunc in sem sit amet ligula scelerisque dapibus. Nullam
+				commodo odio vel enim.</p>
+			<p>
+				<a href="#" data-role="button" data-rel="back" data-theme="b">Back
+					to previous page</a>
+			</p>
+		</div>
+		<div data-role="footer">
+			<h4>&copy; 2012</h4>
+		</div>
+	</div>
+	<div data-role="page" id="record">
+		<header data-role="header">
+			<h1>Digi-Journal v0.1</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-theme="b">Home</a></li>
+				
+				</ul>
+			</div>
+		</header>
+		<div data-role="content">
+			<button onclick="captureAudio();">Capture Audio</button> <br>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc
+				mollis, nulla non elementum tincidunt, felis ligula sodales lectus,
+				sit amet dignissim quam massa sit amet lorem. Aenean lorem risus,
+				tempus nec, gravida eu, semper sed, ipsum. Donec risus. Pellentesque
+				sollicitudin sapien ut neque scelerisque blandit. Praesent metus.
+				Mauris pulvinar mattis justo. Lorem ipsum dolor sit amet,
+				consectetuer adipiscing elit. Integer dictum vehicula orci. Integer
+				sed velit. Nunc in sem sit amet ligula scelerisque dapibus. Nullam
+				commodo odio vel enim.</p>
+			<p>
+				<a href="#" data-role="button" data-rel="back" data-theme="b">Back
+					to previous page</a>
+			</p>
+		</div>
+
+		<div data-role="footer">
+			<h4>&copy; 2012</h4>
+		</div>
+	</div>
+	<div data-role="page" id="cap">
+		<header data-role="header">
+			<h1>Digi-Journal v0.1</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-theme="b">Home</a></li>
+					
+				</ul>
+			</div>
+		</header>
+
+		<div data-role="content">
+			<h3>
+				Capture Page
+			</h3>
+			<button onclick="captureImage();">Capture Image</button> <br>
+			<button onclick="captureVideo();">Capture Video</button> <br>
+			<p>
+				<a href="#" data-role="button" data-rel="back" data-theme="b">Back
+					to previous page</a>
+			</p>
+		</div>
+
+		<div data-role="footer">
+			<h4>&copy; 2012</h4>
+		</div>
+	</div>
+
+</body>
+</html>
